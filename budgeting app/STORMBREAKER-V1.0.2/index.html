@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORMBREAKER</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    
+    <div class="maincontainer">
+        <div class="taskbar">
+            <h1>STORMBREAKER</h1>
+            <ul class="tabs">
+                <li><a href="banks.html">Find your bank</a></li>
+            </ul>
+        </div>
+
+        <div class="blocks">
+            <div class="innerblock">
+                <h1>Budgeting Calculator</h1>
+                <label for="income">Income ($): </label>
+                <input type="number" id="income" placeholder="Enter your income">
+                
+                <div id="expense-categories">
+                    <h3>Expenses Breakdown</h3>
+                    <div>
+                        <label for="expense-rent">Rent ($):</label>
+                        <input type="number" id="expense-rent" placeholder="Enter rent expense">
+                    </div>
+                    <div>
+                        <label for="expense-food">Food ($):</label>
+                        <input type="number" id="expense-food" placeholder="Enter food expense">
+                    </div>
+                    <div>
+                        <label for="expense-transportation">Transportation ($):</label>
+                        <input type="number" id="expense-transportation" placeholder="Enter transportation expense">
+                    </div>
+                    <div>
+                        <label for="expense-savings">Savings ($):</label>
+                        <input type="number" id="expense-savings" placeholder="Enter savings amount">
+                    </div>
+                    <div>
+                        <label for="expense-entertainment">Entertainment ($):</label>
+                        <input type="number" id="expense-entertainment" placeholder="Enter entertainment expense">
+                    </div>
+                    <div>
+                        <label for="expense-other">Other ($):</label>
+                        <input type="number" id="expense-other" placeholder="Enter other expenses">
+                    </div>
+                </div>
+                
+                <button id="calculate">Calculate Budget</button>
+                <div id="result"></div>
+            </div>
+
+            <div class="innerblock">
+                <h1>Notes</h1>
+                <textarea placeholder="Start typing your notes..."></textarea>
+            </div>
+
+            <div class="innerblock">
+                <h1>Budget Breakdown</h1>
+                <canvas id="budgetChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="calcscript.js"></script>
+
+</body>
+</html>
